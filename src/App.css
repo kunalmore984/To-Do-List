@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+#to-do{
+  background-color: rgb(255, 255, 255);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +18,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0f51d6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +39,149 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.input-container {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 10px; /* Space between items */
+  
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  padding-right: 5px;
+  padding-left:  5px;
+  padding-block-start: 5px;
+  margin-right: 10px;
+}
+
+#list_title{
+  font-size: 20px;
+  
+}
+
+#new_list_btn{
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-color: rgb(225, 125, 125);
+  background-color: #ffffff;
+}
+
+#app_title{
+  border-color: rgb(225, 125, 125);
+  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #ffffff;
+  font-size: 40px;
+}
+
+#name_list{
+  border: 1px;
+  border-radius: 15px;
+  border-color: rgb(225, 125, 125);
+  background-color: #ffffff;
+  border-style: solid;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#save_btn{
+  padding: 5px;
+  border-radius: 6px;
+  border-color: rgb(225, 125, 125);
+  border-style: solid;
+  background-color: #ffffff;
+}
+
+#list_li{
+  padding: auto;
+  margin-top: 5px;
+  display: flex;
+  border-bottom: black;
+}
+
+#delete_btn{
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 6px;
+  border-color: rgb(225, 125, 125);
+  background-color: #ffffff;
+  font-size: small;
+  font-weight: bold;
+}
+
+#delete_item{
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 8px;
+  border-color: rgb(225, 125, 125);
+  background-color: #ffffff;
+}
+
+#close_list{
+  border-color: rgb(225, 125, 125);
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+#new_task{
+  padding: 5px;
+  border-radius: 9px;
+  border-color: rgb(225, 125, 125);
+  background-color: #ffffff;
+}
+
+#add_btn{
+  padding: 5px;
+  border-radius: 9px;
+  border-color: rgb(225, 125, 125);
+  background-color: #ffffff;
+}
+
+#item_name{
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+}
+
+.circle-btn {
+  width: 19px;                 /* Set the width */
+  height: 19px;                /* Set the height (same as width for a perfect circle) */
+  border-radius: 50%;          /* This makes the button round */
+  background-color: transparent; /* Transparent background */
+  border: 2px solid #007AFF;   /* Border color similar to the Reminders app */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #007AFF;              /* Text or icon color */
+  font-size: 20px;             /* Button text size */
+  cursor: pointer;             /* Pointer cursor on hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.circle-btn:hover {
+  background-color: #007AFF;  /* Solid background on hover */
+  color: white;
+}
+
+#list_names{
+  padding: 5px;
+  border-radius: 9px;
+  display: block;
+}
+
+.list-index {
+  font-weight: bold;
+  font-size: 21px;
+  margin-right: 18px;  /* Space between the index and the list title */
 }
